@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-container{
+    background-color: #e7ecf0;
+    width: 35%;
+    border: solid 1.25vh aliceblue;
+    border-radius: 30px;
+}
+.profile{
+    background-image: linear-gradient(to right,blueviolet, rgb(242, 22, 250));
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+/*postioning white bar above the mobile */
+
+.space{
+    background-color: aliceblue;
+    height: 30px;
+    width: 80%;
+    border-radius: 10px;
+    position: absolute;
+    left: 10%;
+    top: -1.25vh;
+}
+/* -----------------------*/
+.a{
+    display: flex;
+    padding: 30px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.upper{
+    display: flex;
+    align-items: center;
+}
+.back{
+    border: solid aliceblue;
+    border-width: 2px 2px 0 0;
+    padding: 5px 5px;
+    rotate: 225deg;
+    display: inline-block;  
+}
+.avater{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+.avater img{
+    width: 100%;
+    border-radius: 50%;
+}
+.name-av{
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    color: aliceblue;
+}
+.name{
+    font-size: 18px;
+    font-weight: 1000;
+}
+.av{
+    font-size: 12px;
+}
+.threedot{
+    color: aliceblue;
+}
+
+/* message body*/
+
+.sms{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.left, .right{
+    background-color: aqua;
+    margin: 5px;
+    max-width: 70%;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: small;
+}
+
+.left{
+    background-color: rgb(234, 222, 247);
+    color: blueviolet;
+    align-self: flex-start;
+}
+.right{
+    background-color: aliceblue;
+    align-self: flex-end;
+}
+.right img{
+    width: 30%;
+}
+
+/* style payment */
+.payment{
+    background-image: linear-gradient(to left,blueviolet, rgb(242, 22, 250));
+    margin:  0 10px 10px;
+    width: 80%;
+    padding: 7px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.disc{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border-width: 0.5px;
+    border: solid rgb(174, 118, 226);
+}
+.amont{
+    font-weight: 1000;
+}
+.form{
+    background-color: #fff;
+    margin:0 10px 10px 10px;
+    padding: 10px;
+    border-radius: 22px;
+    position: relative;
+}
+.ar{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+}
+.ar::after{
+    border: solid white;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    content: "";
+    border-color: transparent white white transparent;
+    transform: translate(5px, 5px) rotate(-45deg);
+}
+/* booking */
+
+/*----------- */
+.des{
+    width: 50%;
+}
+
+body{
+    background-image: linear-gradient(to top,blueviolet, rgb(242, 22, 250)),
+    linear-gradient(to left,rgb(221, 204, 236), rgb(221, 204, 236));
+    background-size: 25% 95vh, 25% 95vh;
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 100% ;
+}
+
+@media screen and (max-width: 500px)  {
+    main{
+        flex-direction: column;
+        width: 95%;
+        padding-top: 20px;
+    }
+    .des{
+        width: 95%;
+    }
+    .mobile-container{
+        width: 90%;
+    }
+}
